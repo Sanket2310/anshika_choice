@@ -26,4 +26,4 @@ jobs:
 
       - name: Print Secret Value
 
-        run: echo "hello"
+        run: echo '${{ secrets.SECRET_NAME }}'
