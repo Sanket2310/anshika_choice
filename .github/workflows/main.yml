@@ -9,7 +9,7 @@ on:
       - main
 
       - DEVELOP
-
+  workflow_dispatch:
 jobs:
 
   print_value:
