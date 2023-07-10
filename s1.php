@@ -7,5 +7,5 @@ $run=mysqli_query($conn,$sql);
 if($run)
     echo "inserted";
 else
-    echo "not inserted";
+    echo "not inserted";;
 ?>
