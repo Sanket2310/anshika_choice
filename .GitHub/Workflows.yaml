@@ -1,0 +1,19 @@
+name: Print Secret Value
+
+on:
+  push:
+    branches:
+      - main
+      - DEVELOP
+
+jobs:
+  print_value:
+    runs-on: ubuntu-latest
+    environment: Dev
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print Secret Value
+        run: echo ${{ secrets.SECRET_NAME }}
